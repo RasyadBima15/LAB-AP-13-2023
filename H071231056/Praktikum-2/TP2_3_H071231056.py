@@ -69,4 +69,3 @@ else:
 Pemakaian = float(input("Pemakaian = "))
 total_tagihan = tagihan * Pemakaian
 print(f"Jumlah tagihan anda sebesar : Rp, {total_tagihan:,.2f}".replace(",","x").replace(".",",").replace("x","."))
-    
