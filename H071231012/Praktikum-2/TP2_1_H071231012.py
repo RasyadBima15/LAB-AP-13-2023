@@ -27,3 +27,4 @@ elif gender == 2 :
         print (f'Anda tergolong Overweight dengan BMI {bmi:.2f}')
     else :
         print (f'Anda tergolong Obese dengan BMI {bmi:.2f}')
+        
