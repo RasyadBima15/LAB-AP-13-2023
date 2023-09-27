@@ -24,3 +24,4 @@ while True:
     except EOFError:
         print('Data error')
         break
+
