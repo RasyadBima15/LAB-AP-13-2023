@@ -1,0 +1,15 @@
+def maksimum(*number): #nama argumen
+    if not number:
+        return None
+    max_num = number[0]
+    for num in number:
+        if num > max_num:
+            max_num = num
+
+    return max_num #menyimpan fungsi
+
+result1 = maksimum(1, 2, 4, 6, 9, 3, 1, 9, 10) #tuppel
+print(result1)
+result2 = maksimum(0, 1, 90, 430, 23, 212, 34)
+print(result2)
+

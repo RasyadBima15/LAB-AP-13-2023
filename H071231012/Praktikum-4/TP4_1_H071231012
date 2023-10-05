@@ -1,0 +1,12 @@
+def stringpermutation():
+    try:
+        kata = input('masukkan kata = ')
+        huruf = kata
+        for i in range(len(kata)):
+            balik = huruf[-1] + huruf[0:-1]
+            print(balik, end=' | ')
+            huruf = balik
+    except TypeError:
+        print('error')
+
+stringpermutation() 

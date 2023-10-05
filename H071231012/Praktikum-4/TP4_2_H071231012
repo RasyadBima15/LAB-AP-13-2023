@@ -1,0 +1,11 @@
+def cek_palindrom(word: str):
+    rev_word = word[::-1] #rumus
+
+
+    if word == rev_word: 
+        print('palindrom')
+    else:
+        print('bukan palindrom')
+
+word = input('masukkan kata: ').lower() #otomatis jadi huruf kecil
+cek_palindrom(word)

@@ -1,0 +1,16 @@
+def tangkap (catA,catB,mosC):
+    a = abs(catA - mosC)#supaya hasil positif
+    b = abs(catB - mosC)
+    if a > b :
+        return('Cat b')
+    elif b > a:
+        return ('cat a')
+    else:
+        return ('mouse c')
+try:
+    catA = int(input('masukan cat a: '))
+    catB = int(input ('masukan cat b: '))
+    mosC = int(input ('masukan mouse c: '))
+    print(tangkap (catA, catB, mosC))
+except:
+    print('inputan bukan integer')
