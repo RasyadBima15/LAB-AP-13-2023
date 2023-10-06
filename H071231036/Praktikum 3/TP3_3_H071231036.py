@@ -1,4 +1,5 @@
-while True:
+try :
+    while True:
         derajat = float(input())  
 
         total_detik = int((derajat / 360) * 86400)
@@ -18,6 +19,5 @@ while True:
 
         print(sapa)  
         print(waktu)  
-
-        break
-     
+except ValueError :
+    print("Program ini selesai")    
