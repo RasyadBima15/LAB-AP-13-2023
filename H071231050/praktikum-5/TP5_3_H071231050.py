@@ -10,3 +10,4 @@ if error == 0 and len(kata1) == len(kata2) :
     print ("True")
 else:
     print ("False")
+    
