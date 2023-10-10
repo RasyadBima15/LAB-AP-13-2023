@@ -16,7 +16,6 @@ def anagram(a,b):
 
     print(e)
     print(f)
-
     if e == f: print("True")
     else: print("False")
 
