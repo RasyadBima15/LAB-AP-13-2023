@@ -3,7 +3,7 @@ import re
 pattern1 = r"\b(25[0-5]|2[0-4][0-9]|[1]?[0-9]?[0-9])\b"
 pattern2 = r"[A-Fa-f0-9]{1,4}:[A-Fa-f0-9]{1,4}:[A-Fa-f0-9]{1,4}:[A-Fa-f0-9]{1,4}:[A-Fa-f0-9]{1,4}:[A-Fa-f0-9]{1,4}:[A-Fa-f0-9]{1,4}:[A-Fa-f0-9]{1,4}"
 c = []
-a = int(input())
+a = int(input("masukkan IP address : "))
 for i in range(a):
     b = input()
     n = re.findall(pattern1, b)
