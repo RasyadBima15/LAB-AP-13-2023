@@ -15,4 +15,5 @@ try :
     print("Angka Ganjil: ", angka_ganjil)
     print("Angka Genap: ", angka_genap)
     print("Angka yang habis dibagi 5: ", angka_yang_habis_dibagi_5)
-except : print ("inputan harus berupa integer")
+except : 
+    print("inputan harus berupa integer")
