@@ -28,10 +28,22 @@ class Hero(Human):
         print(self.name +" attacking " + target.name)
         target.being_attack(self)
 
-    #setter
     def being_attack(self,target):
         self._health -= target._power
 
+    # setter
+    def setpower(self,npower):
+        self._power = npower
+    
+    def sethealth(self,nhealth):
+        self._health = nhealth
+    
+    def setarmor(self,narmor):
+        self._armor = narmor
+    
+    def setspeed(self,nspeed):
+        self._speed = nspeed
+    
     #getter
     def gethealth(self):
         return self._health
@@ -82,33 +94,7 @@ class Support(Hero):
         print(self.name +" use heal to " + target.name)
         target._health += 150
 
-# garen = Warrior("garen",pos_x=30)
-# yasuo = Assasins("yasuo",pos_x=30)
-# sora = Support("sora", pos_x=30)
 
-# garen.gethealth()
-# yasuo.Assasins_special(garen)
-# garen.gethealth()
-# sora.Support_special(garen)
-# garen.gethealth()
-
-
-warrior = Warrior("bambang", pos_x=10)
-assassin = Assasins("joko", pos_x=25)
-support = Support("udin",pos_x=30)
-# sebelum
-print("health (before)", warrior.gethealth())
-assassin.Attack(warrior)
-# sesudah
-print("health (after)", warrior.gethealth())
-print("-"*10)
-# sebelum
-print("Warrior (health)", warrior.gethealth())
-print("Support (speed) : ",support.getspeed())
-support.Support_special(warrior)
-# sesudah
-print("Warrior (health)", warrior.gethealth())
-print("Support (speed): ",support.getspeed())
 
     
     
